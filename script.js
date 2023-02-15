@@ -45,7 +45,7 @@ equal.addEventListener("click", () => {
     let last_val = inp_val.slice(-1);
     try {
         //Checks the last element
-        if(validsofix(last_val)){
+        if(validSofix(last_val)){
         //Evaluate user's input
         let solution = eval(inp_val);
         //Checks the /0 issue
@@ -80,7 +80,7 @@ function validInput(val){
         }
     return true;
 }
-function validsofix(val){
+function validSofix(val){
   let operators = ["+", "-", "*", "/","."];
   if(operators.includes(val)){
     return false;
